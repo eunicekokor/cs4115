@@ -1,3 +1,7 @@
+# OSX store file
+*.DS_Store
+
+# OCaml
 *.annot
 *.cmo
 *.cma
