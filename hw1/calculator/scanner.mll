@@ -6,5 +6,8 @@ rule token = parse
 | '-'                  { MINUS }
 | '*'                  { TIMES }
 | '/'                  { DIVIDE }
+| '='                  { ASSIGN }
+| ','                  { COMMA }
 | ['0'-'9']+ as lit    { LITERAL(int_of_string lit) }
+| '$'['0'-'9'] as lit  { VARIABLE(int_of_char lit.[1] - 48) }
 | eof                  { EOF }
