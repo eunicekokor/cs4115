@@ -1,3 +1,8 @@
+(*
+    Alden Quimby - adq2101 - CS4115 HW1
+    3: scanner.mll
+*)
+
 { open Parser }
 
 rule token = parse

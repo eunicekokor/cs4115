@@ -1,3 +1,8 @@
+/* 
+    Alden Quimby - adq2101 - CS4115 HW1
+    3: parser.mly
+ */
+
 %{ open Ast %}
 
 %token PLUS MINUS TIMES DIVIDE ASSIGN COMMA EOF

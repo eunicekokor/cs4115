@@ -1,3 +1,10 @@
+(*
+    Alden Quimby - adq2101 - CS4115 HW1
+    3: ast.mli
+
+    This file was given as part of the assignment.
+*)
+
 type operator = Add | Sub | Mul | Div
 
 type expr =
