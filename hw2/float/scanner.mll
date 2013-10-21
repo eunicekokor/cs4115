@@ -1,4 +1,3 @@
-
 { open Parser }
 
 (* 
@@ -20,9 +19,9 @@
 let digit = ['0'-'9']
 let exp = ('e'['-' '+']?digit+)
 let flt =
-	'-'?digit+('.')digit*exp?       (* handles cases 1-4 *)
-  | '-'?digit+exp                   (* handles case  5   *)
-  | '-'?('.')digit+exp?             (* handles cases 6-7 *)
+    digit+('.')digit*exp?       (* handles cases 1-4 *)
+  | digit+exp                   (* handles case  5   *)
+  | ('.')digit+exp?             (* handles cases 6-7 *)
 
 rule token = parse
   '\n'       { NEWLINE }
